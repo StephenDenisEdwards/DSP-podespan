@@ -81,6 +81,44 @@ The geodetic survey plan (`Documents/dwg-files/10225.dxf`) is the primary workin
 | Radon index | HIGH |
 | Coordinate system | S-JTSK (EPSG:5514) |
 
+## Tools & Services
+
+### Online Viewers
+
+| Tool | URL | Purpose |
+|------|-----|---------|
+| **Autodesk Viewer** | https://viewer.autodesk.com | Free online viewer for DWG, DXF, and PDF files — no software install required. Upload files to inspect layers, measure geometry, and navigate 2D/3D drawings in the browser. |
+
+### CAD Software
+
+| Tool | Purpose |
+|------|---------|
+| **AutoCAD** | Industry-standard CAD software. The DWG files originate from AutoCAD (AC1027 / AutoCAD 2013 format). |
+| **ODA File Converter** | Free tool from the Open Design Alliance for batch converting between DWG and DXF without an AutoCAD licence. Download from https://www.opendesign.com/guestfiles/oda_file_converter |
+
+### Python Libraries
+
+| Library | Purpose |
+|---------|---------|
+| **ezdxf** | Read, write, and manipulate DXF files programmatically. Used by `visualize_dxf.py` and `create_site_plan.py`. Install: `pip install ezdxf` |
+| **matplotlib** | Plotting and PNG export of DXF visualizations. Install: `pip install matplotlib` |
+| **numpy** | Numerical operations for coordinate and geometry processing. Install: `pip install numpy` |
+
+### PDF Processing (optional)
+
+| Library | Purpose |
+|---------|---------|
+| **pdfplumber** | Extract text and tables from PDF documents. Install: `pip install pdfplumber` |
+| **PyPDF2** | PDF merging, splitting, and metadata extraction. Install: `pip install PyPDF2` |
+| **PyMuPDF (fitz)** | High-performance PDF rendering and text extraction. Install: `pip install PyMuPDF` |
+
+### Coordinate Systems
+
+| System | Code | Description |
+|--------|------|-------------|
+| **S-JTSK** | EPSG:5514 | Czech national geodetic coordinate system used in all survey and site plan files |
+| **Bpv** | — | Baltic Vertical Datum — elevation reference for all height data |
+
 ## Next Steps
 
 1. Obtain original DWG files from LUCERN DREVOSTAVBY (see [request document](Documents/DWG%20Files%20Request%20-%20LUCERN.md))
