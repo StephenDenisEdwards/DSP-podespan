@@ -1,1 +1,4 @@
 .claude/
+secrets/
+*.dwl
+*.dwl2
