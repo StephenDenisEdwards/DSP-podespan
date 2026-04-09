@@ -119,6 +119,11 @@ The geodetic survey plan (`Documents/dwg-files/10225.dxf`) is the primary workin
 | **S-JTSK** | EPSG:5514 | Czech national geodetic coordinate system used in all survey and site plan files |
 | **Bpv** | — | Baltic Vertical Datum — elevation reference for all height data |
 
+## Source Files
+
+The original project files are available at:
+[Dropbox — DSP + DPS original files](https://www.dropbox.com/scl/fo/dlxxf2gikck120so64mw4/ANBmE9GKqDEZeK-OOHEcK_o?rlkey=yjp06j1fsihprm6xai4ws58ar&e=4&st=s74td683&dl=0)
+
 ## Next Steps
 
 1. Obtain original DWG files from LUCERN DREVOSTAVBY (see [request document](Documents/DWG%20Files%20Request%20-%20LUCERN.md))
