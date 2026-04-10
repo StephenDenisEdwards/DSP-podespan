@@ -64,9 +64,19 @@ Translation:
 
 | File | Status |
 |------|--------|
-| 10225.dxf | Survey plan (polohopisny a vyskopisny plan) — already in the repo, fully analyzed |
-| 10225.dwg | Same survey plan in DWG format — in the repo but not readable without AutoCAD/ODA converter |
+| 10225.dxf | Survey plan (polohopisny a vyskopisny plan) — in S-JTSK absolute coordinates, fully analyzed |
+| 10225.dwg | Same survey plan in DWG format |
 | All PDFs | Complete set of ~45 PDFs — text/dimensions extractable, but graphical content (shapes, layouts) not accessible |
+| **C.3. Koordinacni situace.dwg/.dxf** | **Received 2026-04-10** — coordination site plan. Paper space coordinates (mm), NOT S-JTSK. |
+| **C.2. Celkovy situacni vykres.dwg/.dxf** | **Received 2026-04-10** — overall site plan. Paper space coordinates (mm), NOT S-JTSK. |
+| **D.1.1.3. Pudorys 1. NP.dwg/.dxf** | **Received 2026-04-10** — ground floor plan. Local coordinates (mm), near origin. |
+
+### Coordinate system issue
+
+The three received DWG files are drawn in paper/layout coordinates, not in S-JTSK absolute coordinates. They cannot be directly overlaid on the survey plan (10225.dxf). Two approaches:
+
+1. **Ask LUCERN for S-JTSK versions** — request the model-space drawings in absolute S-JTSK coordinates, or ask for the xref/block of the survey underlay they used.
+2. **Manual alignment** — extract the building footprint from C.3 and place it on the survey plan using known reference points and setback dimensions. Work on this is underway.
 
 ## What we can do once we have the DWGs
 

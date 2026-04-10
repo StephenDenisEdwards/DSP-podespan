@@ -96,8 +96,47 @@ With DXF files, we can:
 - Create new drawings from scratch
 - Save back to DXF for reopening in AutoCAD
 
+## DXF Analysis Results (2026-04-10)
+
+Three Priority 1 DWG files received from LUCERN and converted to DXF via AutoCAD 2027.
+
+### C.3. Koordinacni situace (Coordination site plan)
+- **DXF version:** AC1027 (AutoCAD 2013)
+- **Units:** mm
+- **Layers:** 12 (including BT_mapove_znacky, BT_hranice_parcel, BT_hranice_budov, BT_vnitrni_kresby, BT_text_parcel, BT_prvky_mapy, Situace - koordinační)
+- **Entities:** 801 (453 LWPOLYLINE, 164 MTEXT, 53 CIRCLE, 39 DIMENSION, 33 HATCH, 30 INSERT, 29 ARC)
+- **Extents:** Min (405930, -271768) to Max (619733, -128588) — paper space layout, ~214m x 143m sheet
+- **Coordinate system:** Paper space (mm), NOT S-JTSK
+
+### C.2. Celkovy situacni vykres (Overall site plan)
+- **DXF version:** AC1027
+- **Units:** mm
+- **Layers:** 10 (similar BT_ survey layers as C.3)
+- **Entities:** 287 (146 LWPOLYLINE, 40 MTEXT, 33 CIRCLE, 31 DIMENSION, 30 INSERT, 7 HATCH)
+- **Extents:** Min (155930, -269476) to Max (369733, -128588) — paper space layout
+- **Coordinate system:** Paper space (mm), NOT S-JTSK
+
+### D.1.1.3. Pudorys 1. NP (Ground floor plan)
+- **DXF version:** AC1027
+- **Units:** mm
+- **Layers:** 24 (Konstrukce - svislé nosné, Otvory – Okna, Otvory – Dveře, Interiér - nábytek, Kóty - SP, etc.)
+- **Entities:** 420 (142 DIMENSION, 100 LWPOLYLINE, 95 INSERT, 58 MTEXT, 18 CIRCLE, 7 HATCH)
+- **Extents:** Min (-2870, -19566) to Max (17163, 9870) — ~20m x 29m, local coordinates near origin
+- **Coordinate system:** Local model coordinates (mm)
+
+### Survey plan reference (10225.dxf)
+- **Extents:** Min (-717399, -1059683) to Max (-717317, -1059575) — ~82m x 108m
+- **Coordinate system:** S-JTSK absolute (EPSG:5514)
+
+### Key finding: Coordinate mismatch
+The LUCERN drawings are in paper/layout coordinates (mm), not S-JTSK. Direct overlay on the survey plan is not possible without transformation. Two approaches being pursued:
+1. Request S-JTSK versions from LUCERN
+2. Manual alignment using reference points and setback dimensions (in progress)
+
 ### Next Steps
-1. Obtain original DWG files from LUCERN DREVOSTAVBY
-2. Export them as DXF (Save As in AutoCAD)
-3. Place DXF files in this project directory
-4. Use ezdxf to read, analyze, and edit the drawings programmatically
+1. ~~Obtain original DWG files from LUCERN DREVOSTAVBY~~ **Done (2026-04-10)**
+2. ~~Export them as DXF (Save As in AutoCAD)~~ **Done (2026-04-10)**
+3. ~~Analyze DXF files with ezdxf~~ **Done (2026-04-10)**
+4. Request S-JTSK coordinate versions from LUCERN
+5. Extract building footprint from C.3 and manually align to survey plan
+6. Create combined site plan (survey + building + utilities) as base for landscaping design
