@@ -64,9 +64,10 @@ The geodetic survey plan (`Documents/dwg-files/10225.dxf`) is the primary workin
 | Document | Description |
 |----------|-------------|
 | [Survey Plan Analysis](Documents/Survey%20Plan%20Analysis%20-%2010225.md) | Detailed analysis of the geodetic survey plan |
-| [Swimming Pond Feasibility](Documents/Natural%20Swimming%20Pond%20-%20Feasibility%20%26%20Design%20Guide.md) | Feasibility study for a natural swimming pond based on site geology, terrain, and utilities |
-| [DWG Files Request](Documents/DWG%20Files%20Request%20-%20LUCERN.md) | Prioritised list of DWG files to request from the architect |
-| [DXF Workflow Setup](Documents/Discussion%20Notes%20-%20DXF%20Workflow%20Setup.md) | Notes on DXF tooling and project context |
+| [Swimming Pond - Project Design Document](Documents/Swimming%20Pond%20-%20Project%20Design%20Document.md) | Consolidated feasibility, geotechnical assessment, and technical design specification for the swimming pond |
+| [CAD Workflow and File Status](Documents/CAD%20Workflow%20and%20File%20Status.md) | CAD file tracking, DXF analysis, coordinate system issues, and project context |
+| [Natural Swimming Ponds Reference](Documents/reseach/natural-swimming-ponds-reference.md) | Comprehensive reference guide: design principles, construction, planting, regulations, costs (UK/EU) |
+| [Image Generation Prompt](Documents/image-generation-prompt.md) | AI visualization prompt specifications for the house and pond |
 
 ## Key Site Data
 
@@ -126,6 +127,6 @@ The original project files are available at:
 
 ## Next Steps
 
-1. Obtain original DWG files from LUCERN DREVOSTAVBY (see [request document](Documents/DWG%20Files%20Request%20-%20LUCERN.md))
+1. Obtain remaining DWG files from LUCERN DREVOSTAVBY (see [CAD Workflow](Documents/CAD%20Workflow%20and%20File%20Status.md))
 2. Create accurate combined site plan with exact building footprint
 3. Design natural swimming pond layout on the DXF base
