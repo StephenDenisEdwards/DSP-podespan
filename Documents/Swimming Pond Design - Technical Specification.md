@@ -298,6 +298,7 @@ All surface runoff and fertiliser from surrounding land must be excluded from th
 | Natural Swimming Ponds Research Report | `Documents/reseach/natural-swimming-ponds-research-report.md` | Design principles, sizing/zoning ratios, construction methods, liner comparison, UK/EU case studies, FLL water quality standards |
 | Natural Swimming Pond: Principles to Construction | `Documents/reseach/natural-swimming-ponds-research-report-2.md` | Planting palettes by depth zone, pump sizing calculations, filtration options comparison, construction sequence, maintenance schedules |
 | Survey Plan Analysis | `Documents/Survey Plan Analysis - 10225.md` | Analysis of the 10225.dxf survey data, elevation points, coordinate system |
+| Soil and Geotechnical Assessment | `Documents/Soil and Geotechnical Assessment - Swimming Pond.md` | Consolidated soil data, permeability analysis, data source traceability, outstanding investigations |
 
 ### Key Standards Referenced
 
